@@ -32,3 +32,20 @@
           )
       )
   )
+
+;profundidad: returns the depth of a possible nested list
+
+(define (profundidad l)
+  (cond ((null? l) 0)
+        ((list? (car l))
+         (+ 1 (profundidad (car l))))
+        (else 0 + (profundidad (cdr l))))
+        
+  )
+
+
+
+
+
+
+
